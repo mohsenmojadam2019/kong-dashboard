@@ -17,6 +17,11 @@
         </style>
     </head>
     <body class="container">
-        @yield('content')
+        @include('default.includes.navbar')
+        <div class="row">
+            <div class="col-md-12">
+                @yield('content')
+            </div>
+        </div>
     </body>
 </html>

@@ -10,6 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'HomeController@index');
-Route::post('/apis', 'ApiController@getApis');
+Route::get('/', 'ApiController@getApis');
+Route::get('/apis/{id}/edit', 'ApiController@editApi');
+Route::put('/apis/{id}/update', 'ApiController@update');
